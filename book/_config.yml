@@ -18,7 +18,6 @@ html:
 sphinx:                                              # Options passed on to the underlying sphinx-parser
   extra_extensions:                                  # Sets a list of extensions to load by sphinx, configuration part of Sphinx (https://www.sphinx-doc.org/en/master/index.html)
     - teachbooks_favourites                          # Gives you a starter package of extensions to use in your book, replace with individual extensions if you prefer some extensions not to be included (https://github.com/TeachBooks/TeachBooks-Favourites)
-  local_extension: null                              # Sets a a list of local extensions to load by sphinx, configuration part of Sphinx (https://www.sphinx-doc.org/en/master/index.html)
   config:
     language: en                                     # Defines language (English) of everything except the content itself. For Dutch: replace with `nl`, configuration part of Sphinx (https://www.sphinx-doc.org/en/master/index.html)
     html_js_files:
@@ -90,7 +89,11 @@ sphinx:                                              # Options passed on to the 
     #tippy_custom_tips                               # Default value not shown (line can be removed), creates custom tips, configuration part of TeachBooks-Sphinx-Tippy (https://teachbooks.io/manual/external/teachbooks-sphinx-tippy/README.html)
     tippy_enable_mathjax: true                       # Default value (line can be removed), enables tooltips for math equations, configuration part of TeachBooks-Sphinx-Tippy (https://teachbooks.io/manual/external/teachbooks-sphinx-tippy/README.html)
     #tippy_js                                        # Default value not shown (line can be removed), sets the Javascript required to enable tooltips, configuration part of TeachBooks-Sphinx-Tippy (https://teachbooks.io/manual/external/teachbooks-sphinx-tippy/README.html)
-
+    bibtex_default_style: myapastyle
+    bibtex_reference_style: author_year_round
+  local_extensions:
+    apastyle: _ext/
+    bracket_citation_style: _ext/
 
 teachbooks:
   attribution_location: top                          # Default value (line can be removed), sets location of attribution admonition of external pages, configuration part of TeachBooks package (https://teachbooks.io/manual/features/external_toc.html)
@@ -109,3 +112,4 @@ parse:
     - tasklist
   myst_url_schemes: [mailto, http, https]            # Default value (lines can be removed), sets URI schemes that will be recognised as external URLs in Markdown links, configuration part of MyST parser (https://myst-parser.readthedocs.io/en/latest/syntax/optional.html)
   myst_dmath_double_inline: true                     # Default value (lines can be removed), allows display math ($$) within an inline context, configuration part of MyST parser (https://myst-parser.readthedocs.io/en/latest/syntax/optional.html)
+
