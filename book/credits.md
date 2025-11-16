@@ -37,3 +37,17 @@ The following pages contain content written by others, part of has been reused a
 ## About the Editors
 
 ### Acknowledgements
+
+Just to make sure references work, here are some citations:
+
+- {cite}`jason_moore`
+
+- {cite:t}`lamport1994latex`
+
+- {cite:p}`einstein1905photoelectric`
+
+- {cite:ps}`mikolov2013word2vec`
+- {cite:ts}`numpy2020`
+- {cite:t}`denouden2025thesis`
+- {cite:t}`nist2017sha3`
+- {cite:t}`knuth1984computers`
