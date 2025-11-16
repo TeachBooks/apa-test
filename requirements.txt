@@ -6,4 +6,4 @@ git+https://github.com/TeachBooks/TeachBooks-Favourites
 
 docutils
 
-git+https://github.com/TeachBooks/Sphinx-Apa-References
+sphinx-apa-references
